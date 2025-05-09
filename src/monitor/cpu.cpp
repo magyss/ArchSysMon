@@ -22,10 +22,6 @@ void CpuMonitor::updatePrevStats(const std::vector<std::vector<unsigned long lon
     prevCpuStats = newStats;
 }
 
-void initializeCpuMonitor() {
-    
-}
-
 std::vector<CpuCoreUsage> CpuMonitor::getUsage() {
     std::ifstream file("/proc/stat");
     std::string line;
